@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Intro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen">
+  </head>
+  <body>
+    <div class="page">
+      <h1>Welcome!</h1>
+      Click <a href="/logout">here</a> to logout.
+      {% for message in get_flashed_messages() %}
+        {{ message }}
+      {% endfor %}
+        <h3>User records from database:</h3>
+        </div>
+{% for post in posts %}
+  <strong>Username:</strong> {{ post.username }} <br>
+<br>
+
+{% endfor %}
+  <p>
+      With my previous experience in Python, Flask, Django, Java, GIT, SQL.
+      I believe I have combination of skills and qualities you are looking for.
+      I am excited by the strong potential fit I see with you.
+      I believe that my passion towards research fuels a high degree of initiative,
+      which thrives in a driven, fast moving, and entrepreneurial environment such as yours.
+      I have what it takes to do this job and I want to add some value to the company and improve my skillset (win to win).
+      </p>
+  </body>
+</html>
